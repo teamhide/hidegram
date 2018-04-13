@@ -10,6 +10,7 @@ class ImageAdmin(admin.ModelAdmin):
     )
     list_display = (
         'file',
+        'creator',
         'location',
         'caption',
         'created_at',
