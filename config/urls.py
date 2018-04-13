@@ -20,6 +20,7 @@ urlpatterns = [
         include("hidegram.users.urls", namespace="users"),
     ),
     url(r"^accounts/", include("allauth.urls")),
+    url(r"^images/", include("hidegram.images.urls", namespace="images")),
     # Your stuff: custom urls includes go here
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
